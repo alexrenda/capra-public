@@ -42,7 +42,7 @@ Opal is an in-progress programming language that unifies a suite of new language
 Unlike GUIs or command-line interactions, AI-based user interfaces are intrinsically ambiguous. Natural language can have multiple interpretations even when NLU is perfect, and predictive applications need to take action without any explicit guidance from the user. In all cases, the right interpretation depends on the hypothetical outcome of taking a given action.
 
 Opal's *hypothetical world* construct expresses nondeterministic choice. Programs use it to search a space of possible interpretations for ambiguity.
-Inside an Opal `hyp` block, code looks natural---as if it were interacting with the real world---but effects are isolated (except `weights`, which are explicit communication channels to the parent world) until the program `commit`s the resulting changes.
+Inside an Opal `hyp` block, code looks natural---as if it were interacting with the real world---but effects are isolated (except `weight`s, which are explicit communication channels to the parent world) until the program `commit`s the resulting changes.
 
 For example, a calendar application might support an ambiguous command to schedule a meeting without a specific day. It can use hypothetical worlds to propose schedule modifications:
 
